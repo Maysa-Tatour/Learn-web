@@ -1,0 +1,269 @@
+/* ---------------------- الأساسيات ---------------------- */
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+  background-color: #fefaf7;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #5e3f6b;
+}
+
+/* ---------------------- الهيدر ---------------------- */
+header {
+  background-color: #e0cce2;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6e4b7e;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #6e4b7e;
+  font-weight: bold;
+}
+
+    .main-sidebar {
+      width: 240px;
+      background-color: #f3e5f5;
+      padding: 30px 20px;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+    }
+    .main-sidebar h2 {
+      color: #6e4b7e;
+      margin-bottom: 20px;
+    }
+    .main-sidebar a {
+      display: block;
+      margin: 12px 0;
+      text-decoration: none;
+      color: #5e3f6b;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .main-sidebar a:hover {
+      background-color: #e0cfe5;
+    }
+
+/* ---------------------- التخطيط العام ---------------------- */
+.main-layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  position: relative;
+  width: 250px;
+  background: #f9f3f9;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: #6e4b7e;
+  text-align: center;
+}
+
+.sidebar ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 8px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #5e3f6b;
+  font-weight: 500;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.sidebar ul li a.active {
+  background-color: #6e4b7e;
+  color: white;
+  font-weight: bold;
+}
+
+.lesson-content {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+  line-height: 1.8;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 2px;
+  right: 20px;
+  z-index: 999;
+  background-color: #6e4b7e;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+ 
+/* ---------------------- الفوتر ---------------------- */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f1eaf2;
+  color: #6e4b7e;
+  margin-top: 40px;
+
+}
+.footer-nav{
+  display: none;
+}
+
+/* ---------------------- كود البرمجة ---------------------- */
+pre {
+  background-color: #f9f3f9;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-x: auto;
+  direction: ltr;
+}
+
+/* ---------------------- ميديا كويري: لابتوب وتابلت ---------------------- */
+@media (max-width: 1024px) {
+  .content {
+    margin: 20px;
+    padding: 15px;
+  }
+  .footer-nav{
+  display: none;
+}
+
+}
+
+/* ---------------------- ميديا كويري: موبايل ---------------------- */
+@media (max-width: 768px) {
+  header {
+    align-items: flex-end;
+    justify-content: end;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .main-layout {
+    flex-direction: column;
+  }
+    .main-sidebar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 240px;
+        z-index: 998;
+        transition: right 0.3s ease-in-out;
+      }
+      .main-sidebar.active {
+        right: 0;
+      }
+
+  .content {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    background-color: #f9f3f9;
+    padding: 70px 20px 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 998;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .top-nav {
+    display: none;
+  }
+  .footer-nav{
+    display: block;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+   .footer-nav a {
+    text-decoration: none;
+    color: #6e4b7e;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #f9f3f9;
+    border-radius: 8px;
+  }
+}
+
+/* ---------------------- ميديا كويري: شاشات صغيرة جداً ---------------------- */
+@media (max-width: 480px) {
+  .content {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  header {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+}

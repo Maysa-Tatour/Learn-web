@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>الرئيسية - MisaDesigns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      background-color: #fdf9fc;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* زر الهمبرغر */
+    .menu-toggle {
+      display: none;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #6e4b7e;
+      color: white;
+      border: none;
+      font-size: 24px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      z-index: 999;
+    }
+
+    .sidebar {
+      width: 240px;
+      background-color: #f3e5f5;
+      padding: 30px 20px;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .sidebar h2 {
+      color: #6e4b7e;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 12px 0;
+      text-decoration: none;
+      color: #5e3f6b;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #e0cfe5;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+      color: #333;
+    }
+
+    .intro-section {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(110,75,126,0.1);
+      margin-bottom: 40px;
+    }
+
+    .intro-section h1 {
+      color: #6e4b7e;
+      font-size: 32px;
+    }
+
+    .intro-section p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #6e4b7e;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background-color: #8f6cb5;
+    }
+
+    .featured-section h2 {
+      color: #6e4b7e;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #faf5fb;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(110,75,126,0.15);
+      padding: 20px;
+      border-right: 6px solid #6e4b7e;
+    }
+
+    .card h3 {
+      color: #6e4b7e;
+    }
+
+    .card p {
+      color: #444;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .btn-secondary {
+      margin-top: 15px;
+      display: inline-block;
+      background-color: #6e4b7e;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn-secondary:hover {
+      background-color: #8f6cb5;
+    }
+
+    /* ✅ Responsive */
+    @media screen and (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 240px;
+        z-index: 998;
+        transition: right 0.3s ease-in-out;
+      }
+      .sidebar.active {
+        right: 0;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- زر القائمة -->
+  <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+
+  <!-- القائمة الجانبية -->
+  <div class="sidebar" id="sidebar">
+    <h2>MisaDesigns</h2>
+    <a href="learn.html">📘 تعلم</a>
+    <a href="projects.html">💻 مشاريعي</a>
+    <a href="https://github.com/Maysa-Tatour" target="_blank">🐙 GitHub</a>
+    <a href="https://youtube.com/@code2799?si=ypRCBooV5jBldT2A" target="_blank">📺 YouTube</a>
+    <a href="about.html">🙋‍♀️ من أنا</a>
+    <a href="contact.html">📩 تواصل</a>
+  </div>
+
+  <!-- المحتوى -->
+  <div class="main-content">
+    <section class="intro-section">
+      <h1>مرحبًا بك في MisaDesigns!</h1>
+      <p>موقع لتعلم تصميم المواقع بخطوات سهلة وعملية.  
+        دروس HTML، CSS، JavaScript + مشاريع تطبيقية لكِ أنتِ كمبتدئة.</p>
+      <a href="learn.html" class="btn-primary">ابدئي التعلم الآن</a>
+    </section>
+
+    <section class="featured-section">
+      <h2>دروس مختارة</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>مقدمة في HTML</h3>
+          <p>ابدئي من الصفر وتعلمي كيف تُبنين صفحة ويب بلغة HTML.</p>
+          <a href="learn.html#lesson1" class="btn-secondary">ابدئي الدرس</a>
+        </div>
+        <div class="card">
+          <h3>مشروع معرض صور</h3>
+          <p>مشروع عملي يعرض الصور بتصميم جميل وتفاعلي. مناسب للتطبيق بعد تعلم CSS.</p>
+          <a href="projects.html#gallery" class="btn-secondary">شاهدي المشروع</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- جافاسكربت للزر -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

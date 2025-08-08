@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>اسم الدرس هنا - MisaDesigns</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>/* نفس التنسيق الموجود حالياً */</style>
+</head>
+<body>
+  <header>
+    <div class="menu-toggle" onclick="toggleNavMenu()">☰</div>
+    
+    <nav class="top-nav" id="topNav">
+      <a href="index.html">الرئيسية</a>
+      <a href="learn.html">تعلم</a>
+      <a href="about.html">من أنا</a>
+      <a href="contact.html">تواصل</a>
+    </nav>
+    <div class="logo">MisaDesigns</div>
+  </header>
+
+  <main>
+    <div class="content main-layout">
+        <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+      <div class="sidebar" id="sideBar">
+      
+        <h3>فهرس HTML</h3>
+        <ul>
+          <li><a href="lesson1.html" class="active">مقدمة في HTML</a></li>
+          <li><a href="lesson2.html">العناصر الأساسية</a></li>
+          <li><a href="lesson3.html">الروابط والصور</a></li>
+          <li><a href="lesson4.html">القوائم والجداول</a></li>
+        </ul>
+      </div>
+
+      <div class="lesson-content">
+         <h1>الدرس 1: مقدمة في HTML</h1>
+
+        <p>HTML هي اختصار لـ <strong>HyperText Markup Language</strong>، وتعني "لغة ترميز النص الفائق". وهي تُستخدم لإنشاء وبناء الهيكل العام لصفحات الويب. تُعد HTML اللبنة الأساسية التي تعتمد عليها جميع صفحات الإنترنت.</p>
+
+        <h2>لماذا HTML مهمة؟</h2>
+        <p>كل موقع ويب تزوره يتكون في الأساس من ملفات HTML. فـ HTML هي اللغة التي تخبر المتصفح كيف يُرتب النصوص، الصور، الأزرار، والروابط على الصفحة. بدونها، لا يمكن للمتصفح عرض أي محتوى مفيد.</p>
+
+        <h2>ما الذي تفعله HTML؟</h2>
+        <p>HTML لا تتحكم في شكل التصميم أو الألوان — هذه وظيفة CSS — ولكنها تُحدد:</p>
+        <ul>
+          <li>العناوين والفقرات.</li>
+          <li>الصور والفيديوهات.</li>
+          <li>القوائم والجداول.</li>
+          <li>الروابط بين الصفحات.</li>
+          <li>نماذج الإدخال (forms) للتسجيل وتسجيل الدخول.</li>
+        </ul>
+
+        <h2>كيف تعمل HTML؟</h2>
+        <p>HTML تعتمد على ما يُسمى "الوسوم" (Tags). كل وسم يُحيط بجزء من المحتوى ليُخبر المتصفح كيف يتعامل معه. الوسوم عادة تأتي على شكل:</p>
+
+        <pre><code>&lt;tagname&gt;المحتوى&lt;/tagname&gt;</code></pre>
+
+        <p>مثال:</p>
+        <pre><code>&lt;p&gt;هذه فقرة نصية&lt;/p&gt;</code></pre>
+
+        <p>الوسم &lt;p&gt; يُستخدم لكتابة فقرة، وتُغلق الوسوم غالباً باستخدام علامة <code>/</code>.</p>
+
+        <h2>أبسط مثال على صفحة HTML كاملة:</h2>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ar"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;صفحة تجريبية&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;مرحباً بالعالم&lt;/h1&gt;
+    &lt;p&gt;هذه أول صفحة HTML لي.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h2>خاتمة</h2>
+        <p>تعلم HTML هو الخطوة الأولى لأي شخص يريد الدخول إلى عالم تصميم وتطوير الويب. إنها لغة سهلة الفهم، ويمكنك البدء بها فوراً دون الحاجة إلى برامج معقدة. فقط محرر نصوص ومتصفح كافيان.</p>
+
+        <a href="https://youtu.be/EWEBHo8ZGdM" target="_blank"
+          style="display: inline-block; padding: 10px 20px; background-color: #a678b4; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
+          🎥 شاهد الفيديو على يوتيوب
+        </a>
+      </div>
+    </div>
+        <!-- أضيفي أي أقسام هنا -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+     <nav class="footer-nav" id="topNav">
+      <a href="index.html">الرئيسية</a>
+      <a href="learn.html">تعلم</a>
+      <a href="about.html">من أنا</a>
+      <a href="contact.html">تواصل</a>
+    </nav>
+    &copy; 2025 MisaDesigns. جميع الحقوق محفوظة.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>مشاريعي - MisaDesigns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #fef9fc;
+      margin: 0;
+      direction: rtl;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 240px;
+      background-color: #f3e5f5;
+      padding: 30px 20px;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+    }
+    .sidebar h2 {
+      color: #6e4b7e;
+      margin-bottom: 20px;
+    }
+    .sidebar a {
+      display: block;
+      margin: 12px 0;
+      text-decoration: none;
+      color: #5e3f6b;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .sidebar a:hover {
+      background-color: #e0cfe5;
+    }
+    .main-content {
+      flex: 1;
+      padding: 40px;
+      background-color: #fff;
+    }
+    h1 {
+      color: #6e4b7e;
+      margin-bottom: 30px;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 24px;
+    }
+    .project-card {
+      background-color: #faf5fb;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(110,75,126,0.15);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+      border-right: 6px solid #6e4b7e;
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+    .project-card img {
+      border-radius: 10px;
+      max-width: 100%;
+      margin-bottom: 15px;
+      object-fit: cover;
+      height: 160px;
+    }
+    .project-card h3 {
+      margin: 0 0 10px 0;
+      color: #6e4b7e;
+    }
+    .project-card p {
+      flex-grow: 1;
+      color: #444;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .project-links {
+      margin-top: 15px;
+    }
+    .project-links a {
+      text-decoration: none;
+      color: white;
+      background-color: #6e4b7e;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-right: 10px;
+      transition: background-color 0.3s;
+    }
+    .project-links a:hover {
+      background-color: #8f6cb5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>MisaDesigns</h2>
+    <a href="index.html">🏠 الرئيسية</a>
+    <a href="learn.html">📘 تعلم</a>
+    <a href="projects.html">💻 مشاريعي</a>
+    <a href="https://github.com/YourUsername" target="_blank">🐙 GitHub</a>
+    <a href="https://youtube.com/@YourChannel" target="_blank">📺 YouTube</a>
+    <a href="about.html">🙋‍♀️ من أنا</a>
+    <a href="contact.html">📩 تواصل</a>
+  </div>
+
+  <div class="main-content">
+    <h1>مشاريعي</h1>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="images/project1.png" alt="مشروع قائمة مهام" />
+        <h3>قائمة مهام</h3>
+        <p>تطبيق بسيط لإدارة المهام باستخدام JavaScript. يسمح لك بإضافة وحذف المهام بسهولة.</p>
+        <div class="project-links">
+          <a href="https://your-live-site1.com" target="_blank">عرض المشروع</a>
+          <a href="https://github.com/YourUsername/todo-app" target="_blank">شاهد الكود</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project2.png" alt="مشروع معرض صور" />
+        <h3>معرض صور</h3>
+        <p>معرض صور تفاعلي باستخدام HTML و CSS و JavaScript، مع تأثيرات جميلة وسلسة.</p>
+        <div class="project-links">
+          <a href="https://your-live-site2.com" target="_blank">عرض المشروع</a>
+          <a href="https://github.com/YourUsername/photo-gallery" target="_blank">شاهد الكود</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project3.png" alt="مشروع صفحة شخصية" />
+        <h3>صفحة شخصية</h3>
+        <p>صفحة تعريف شخصية تعرض السيرة الذاتية ومعلومات التواصل بطريقة أنيقة ومتجاوبة.</p>
+        <div class="project-links">
+          <a href="https://your-live-site3.com" target="_blank">عرض المشروع</a>
+          <a href="https://github.com/YourUsername/personal-page" target="_blank">شاهد الكود</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

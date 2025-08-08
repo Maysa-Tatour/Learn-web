@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>اسم الدرس هنا - MisaDesigns</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>/* نفس التنسيق الموجود حالياً */</style>
+</head>
+<body>
+  <header>
+    <div class="menu-toggle" onclick="toggleNavMenu()">☰</div>
+    
+    <nav class="top-nav" id="topNav">
+      <a href="index.html">الرئيسية</a>
+      <a href="learn.html">تعلم</a>
+      <a href="about.html">من أنا</a>
+      <a href="contact.html">تواصل</a>
+    </nav>
+    <div class="logo">MisaDesigns</div>
+  </header>
+
+  <main>
+    <div class="content main-layout">
+        <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+      <div class="sidebar" id="sideBar">
+      
+        <h3>فهرس HTML</h3>
+        <ul>
+          <li><a href="lesson1.html">مقدمة في HTML</a></li>
+          <li><a href="lesson2.html" class="active">العناصر الأساسية</a></li>
+          <li><a href="lesson3.html">الروابط والصور</a></li>
+          <li><a href="lesson4.html">القوائم والجداول</a></li>
+        </ul>
+      </div>
+
+      <div class="lesson-content">
+         <h1>الدرس 2: العناصر الأساسية في HTML</h1>
+
+        <p>في هذا الدرس سنتعرف على أهم الوسوم (Tags) التي تُشكّل البنية الأساسية لأي صفحة HTML. هذه الوسوم تُستخدم لتحديد محتوى الصفحة وترتيبه بشكل منطقي ومقروء من قبل المتصفح.</p>
+
+        <h2>1. وسم &lt;!DOCTYPE&gt;</h2>
+        <p>هذا الوسم يُستخدم في أول سطر من أي ملف HTML. يُخبر المتصفح بنوع الوثيقة المستخدمة. في HTML5 نكتبه هكذا:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+
+        <h2>2. وسم &lt;html&gt;</h2>
+        <p>هو الجذر الذي يحتوي على كل عناصر الصفحة.</p>
+        <pre><code>&lt;html lang="ar"&gt;
+  ... محتوى الصفحة ...
+&lt;/html&gt;</code></pre>
+
+        <h2>3. وسم &lt;head&gt;</h2>
+        <p>يحتوي على معلومات غير مرئية للمستخدم مثل العنوان، الروابط، الخطوط، الميتا تاجز:</p>
+        <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;عنوان الصفحة&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+        <h2>4. وسم &lt;title&gt;</h2>
+        <p>يظهر في شريط عنوان المتصفح، وهو عنوان الصفحة.</p>
+
+        <h2>5. وسم &lt;body&gt;</h2>
+        <p>يحتوي على كل ما يظهر داخل المتصفح: نصوص، صور، أزرار، روابط... إلخ.</p>
+
+        <h2>6. العناوين: &lt;h1&gt; إلى &lt;h6&gt;</h2>
+        <p>تُستخدم لتحديد العناوين بمستويات مختلفة. &lt;h1&gt; هو الأعلى، و&lt;h6&gt; هو الأصغر.</p>
+        <pre><code>&lt;h1&gt;عنوان رئيسي&lt;/h1&gt;
+&lt;h2&gt;عنوان فرعي&lt;/h2&gt;</code></pre>
+
+        <h2>7. وسم الفقرة &lt;p&gt;</h2>
+        <p>يُستخدم لكتابة فقرة من النص.</p>
+        <pre><code>&lt;p&gt;هذه فقرة نصية&lt;/p&gt;</code></pre>
+          <a href="https://youtu.be/4yJtaxhZn7A" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #a678b4; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
+          🎥 شاهد الفيديو على يوتيوب
+        </a>
+        <h2>8. وسم السطر الجديد &lt;br&gt;</h2>
+        <p>يُستخدم لكسر السطر وإجبار النص على النزول لسطر جديد.</p>
+        <pre><code>مرحباً&lt;br&gt;بالعالم</code></pre>
+
+        <h2>9. وسم الخط الفاصل &lt;hr&gt;</h2>
+        <p>يرسم خط أفقي بين أجزاء الصفحة، غالبًا للفصل بين أقسام.</p>
+        <pre><code>&lt;hr&gt;</code></pre>
+
+        <h2>خاتمة</h2>
+        <p>هذه الوسوم هي حجر الأساس لأي صفحة HTML. بتعلّمها، ستتمكن من كتابة صفحاتك الأولى بسهولة واحتراف.</p>
+
+        <a href="https://youtu.be/EWEBHo8ZGdM" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #a678b4; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
+          🎥 شاهد الفيديو على يوتيوب
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+     <nav class="footer-nav" id="topNav">
+      <a href="index.html">الرئيسية</a>
+      <a href="learn.html">تعلم</a>
+      <a href="about.html">من أنا</a>
+      <a href="contact.html">تواصل</a>
+    </nav>
+    &copy; 2025 MisaDesigns. جميع الحقوق محفوظة.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

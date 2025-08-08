@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>دروس CSS - MisaDesigns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      background-color: #f9fff9;
+      display: flex;
+      flex-direction: row;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #e0f2f1;
+      padding: 20px;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+    }
+    .sidebar h3 {
+      color: #00796b;
+      margin-bottom: 15px;
+    }
+    .sidebar a {
+      display: block;
+      color: #004d40;
+      text-decoration: none;
+      margin-bottom: 10px;
+      padding: 8px 10px;
+      border-radius: 6px;
+    }
+    .sidebar a.active {
+      background-color: #00796b;
+      color: #fff;
+    }
+    .sidebar a:hover {
+      background-color: #b2dfdb;
+    }
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+    .lesson {
+      background: #fff;
+      border-right: 6px solid #00796b;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,121,107,0.1);
+    }
+    .lesson h2 {
+      margin-top: 0;
+      color: #00796b;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h3>فهرس CSS</h3>
+    <a href="#intro" class="active">مقدمة عن CSS</a>
+    <a href="#selectors">المحددات (Selectors)</a>
+    <a href="#colors">الألوان والخطوط</a>
+    <a href="#practice">تطبيق عملي</a>
+  </div>
+
+  <div class="content">
+    <div class="lesson" id="intro">
+      <h2>مقدمة عن CSS</h2>
+      <p>CSS هي لغة تنسيق صفحات الويب، تستخدم لتجميل وتنظيم مظهر المحتوى.</p>
+    </div>
+
+    <div class="lesson" id="selectors">
+      <h2>المحددات (Selectors)</h2>
+      <p>تُستخدم لاختيار عناصر HTML لتطبيق التنسيق عليها مثل class و id.</p>
+    </div>
+
+    <div class="lesson" id="colors">
+      <h2>الألوان والخطوط</h2>
+      <p>تعلمي كيفية استخدام الألوان، وتغيير الخطوط لتنسيق مظهر الموقع.</p>
+    </div>
+
+    <div class="lesson" id="practice">
+      <h2>تطبيق عملي</h2>
+      <p>سوف نقوم بإنشاء صفحة بألوان وخطوط مختلفة باستخدام CSS.</p>
+    </div>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll('.sidebar a');
+    links.forEach(link => {
+      link.addEventListener('click', function() {
+        links.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>دروس HTML - MisaDesigns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      background-color: #fff9fb;
+      display: flex;
+      flex-direction: row;
+    }
+
+   
+
+    .content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .lesson {
+      background: #fff;
+      border-right: 6px solid #6e4b7e; /* شريط جانبي */
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(110,75,126,0.1);
+      position: relative;
+    }
+
+    .lesson h2 {
+      margin-top: 0;
+      color: #6e4b7e;
+    }
+
+    .lesson a.lesson-link {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #6e4b7e;
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .lesson a.lesson-link:hover {
+      background-color: #8e67a1;
+    }
+  </style>
+</head>
+<body>
+   <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="main-sidebar" id="sideBar">
+    <h3>فهرس الدروس</h3>
+    <a onclick="clickLink()" href="#intro" class="active">مقدمة عن HTML</a>
+    <a onclick="clickLink()" href="#tags">الوسوم الأساسية</a>
+    <a onclick="clickLink()" href="#structure">هيكل الصفحة</a>
+    <a  onclick="clickLink()" href="#practice">تطبيق عملي</a>
+  </div>
+
+  <div class="content">
+    <div class="lesson" id="intro">
+      <h2>مقدمة عن HTML</h2>
+      <p>HTML هي اللغة الأساسية لإنشاء صفحات الويب، وهي مسؤولة عن الهيكل العام للمحتوى.</p>
+      <a href="lesson1.html" class="lesson-link">شاهد الدرس</a>
+    </div>
+
+    <div class="lesson" id="tags">
+      <h2>الوسوم الأساسية</h2>
+      <p>تُستخدم الوسوم مثل &lt;p&gt; و &lt;a&gt; و &lt;img&gt; لعرض النصوص، الروابط، والصور.</p>
+      <a href="lesson2.html" class="lesson-link">شاهد الدرس</a>
+    </div>
+
+    <div class="lesson" id="structure">
+      <h2>هيكل الصفحة</h2>
+      <p>كل صفحة HTML تتكون من عناصر أساسية مثل &lt;html&gt;، &lt;head&gt;، &lt;body&gt;.</p>
+      <a href="lesson3.html" class="lesson-link">شاهد الدرس</a>
+    </div>
+
+    <div class="lesson" id="practice">
+      <h2>تطبيق عملي</h2>
+      <p>سوف نقوم بإنشاء صفحة بسيطة تحتوي على عنوان، فقرة، وصورة.</p>
+      <a href="lesson4.html" class="lesson-link">شاهد الدرس</a>
+    </div>
+  </div>
+
+  <script src="script.js">
+   
+  </script>
+</body>
+</html>

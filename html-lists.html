@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الدرس 1 - HTML - MisaDesigns</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .main-layout {
+      display: flex;
+      gap: 20px;
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #f9f3f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .sidebar h3 {
+      margin-top: 0;
+      color: #6e4b7e;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding-right: 0;
+    }
+    .sidebar ul li {
+      margin: 8px 0;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #5e3f6b;
+      font-weight: 500;
+      padding: 5px 10px;
+      display: inline-block;
+      border-radius: 6px;
+    }
+    .sidebar ul li a.active {
+      background-color: #6e4b7e;
+      color: white;
+      font-weight: bold;
+    }
+    .lesson-content {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+      line-height: 1.8;
+    }
+    pre {
+      background-color: #f9f3f9;
+      padding: 15px;
+      border-radius: 10px;
+      direction: ltr;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MisaDesigns</div>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="learn.html">تعلم</a>
+      <a href="about.html">من أنا</a>
+      <a href="contact.html">تواصل</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content main-layout">
+      <div class="sidebar">
+        <h3>فهرس HTML</h3>
+        <ul>
+          <li><a href="lesson1.html" class="active">مقدمة في HTML</a></li>
+          <li><a href="lesson2.html">العناصر الأساسية</a></li>
+          <li><a href="lesson3.html">الروابط والصور</a></li>
+          <li><a href="html-lists.html">القوائم والجداول</a></li>
+        </ul>
+      </div>
+
+      <div class="lesson-content">
+     
+   <h1>شرح وافي عن القوائم في HTML</h1>
+
+        <p>في HTML، تُستخدم الوسوم التالية لإنشاء القوائم:</p>
+
+        <ul>
+          <li><strong>&lt;ul&gt;</strong>: لإنشاء قائمة غير مرتبة (bullet points).</li>
+          <li><strong>&lt;ol&gt;</strong>: لإنشاء قائمة مرتبة (مرقمة).</li>
+          <li><strong>&lt;li&gt;</strong>: لتمثيل عنصر داخل أي قائمة.</li>
+        </ul>
+
+        <h2>أمثلة عملية:</h2>
+
+        <h3>1. قائمة غير مرتبة (ul):</h3>
+        <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;تفاحة&lt;/li&gt;
+  &lt;li&gt;موز&lt;/li&gt;
+  &lt;li&gt;برتقال&lt;/li&gt;
+&lt;/ul&gt;
+        </code></pre>
+
+        <p>تظهر هذه العناصر على شكل نقاط.</p>
+
+        <h3>2. قائمة مرتبة (ol):</h3>
+        <pre><code>
+&lt;ol&gt;
+  &lt;li&gt;فتح المتصفح&lt;/li&gt;
+  &lt;li&gt;زيارة الموقع&lt;/li&gt;
+  &lt;li&gt;قراءة المقالة&lt;/li&gt;
+&lt;/ol&gt;
+        </code></pre>
+
+        <p>تظهر هذه العناصر على شكل أرقام تلقائية.</p>
+
+        <h2>متى تستخدم كل نوع؟</h2>
+        <ul>
+          <li>استخدم <code>&lt;ul&gt;</code> عندما تكون العناصر غير مرتبة أو لا يهم ترتيبها.</li>
+          <li>استخدم <code>&lt;ol&gt;</code> عندما يكون الترتيب مهمًا مثل خطوات أو ترتيب مهام.</li>
+        </ul>
+
+        <hr>
+        <a href="https://youtu.be/jrThO3nkxDw" target="_blank" style="display:inline-block; background-color:#7e57c2; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">📺 شاهد الشرح على يوتيوب</a>
+      </div>
+    </div>
+</a>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2025 MisaDesigns. جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>

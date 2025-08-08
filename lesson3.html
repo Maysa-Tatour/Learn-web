@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>اسم الدرس هنا - MisaDesigns</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>/* نفس التنسيق الموجود حالياً */</style>
+</head>
+<body>
+  <header>
+    <div class="menu-toggle" onclick="toggleNavMenu()">☰</div>
+    
+    <nav class="top-nav" id="topNav">
+      <a href="index.html">الرئيسية</a>
+      <a href="learn.html">تعلم</a>
+      <a href="about.html">من أنا</a>
+      <a href="contact.html">تواصل</a>
+    </nav>
+    <div class="logo">MisaDesigns</div>
+  </header>
+
+  <main>
+    <div class="content main-layout">
+        <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+      <div class="sidebar" id="sideBar">
+      
+        <h3>فهرس HTML</h3>
+        <ul>
+          <li><a href="lesson1.html">مقدمة في HTML</a></li>
+          <li><a href="lesson2.html">العناصر الأساسية</a></li>
+          <li><a href="lesson3.html" class="active">الروابط والصور</a></li>
+          <li><a href="lesson4.html">القوائم والجداول</a></li>
+        </ul>
+      </div>
+
+      <div class="lesson-content">
+         <h1>الدرس 3: الصور والروابط في HTML</h1>
+
+<p>في هذا الدرس سنتعلم كيفية إدراج الصور داخل الصفحة وكيفية إنشاء روابط تنقل المستخدم إلى صفحات أو مواقع أخرى.</p>
+
+<h2>1. وسم الصورة &lt;img&gt;</h2>
+<p>يُستخدم لعرض صورة داخل الصفحة. لا يحتاج وسم <code>&lt;img&gt;</code> إلى وسم إغلاق، ويجب أن يحتوي على خاصية <code>src</code> لتحديد مسار الصورة، و<code>alt</code> لوصفها:</p>
+<pre><code>&lt;img src="image.jpg" alt="وصف الصورة"&gt;</code></pre>
+
+<p>مثال:</p>
+<pre><code>&lt;img src="cat.jpg" alt="قطة لطيفة" width="300"&gt;</code></pre>
+
+<h2>2. خاصية alt</h2>
+<p>تُستخدم لعرض نص بديل إذا لم تظهر الصورة، وتساعد في تحسين الوصول وتجربة المستخدم.</p>
+
+<h2>3. وسم الرابط &lt;a&gt;</h2>
+<p>يُستخدم لإنشاء رابط نصي أو رابط حول صورة. الخاصية الأساسية فيه هي <code>href</code> لتحديد وجهة الرابط:</p>
+<pre><code>&lt;a href="https://www.example.com"&gt;اذهب إلى Example&lt;/a&gt;</code></pre>
+
+<p>يمكنك جعل الصورة نفسها رابطًا:</p>
+<pre><code>&lt;a href="https://www.example.com"&gt;
+  &lt;img src="cat.jpg" alt="قطة لطيفة"&gt;
+&lt;/a&gt;</code></pre>
+
+<h2>4. فتح الرابط في تبويب جديد</h2>
+<p>لجعل الرابط يفتح في نافذة أو تبويب جديد، نستخدم الخاصية <code>target="_blank"</code>:</p>
+<pre><code>&lt;a href="https://www.google.com" target="_blank"&gt;افتح جوجل في تبويب جديد&lt;/a&gt;</code></pre>
+
+<h2>5. روابط داخل الصفحة (Anchor)</h2>
+<p>يمكنك إنشاء روابط تنقلك لأجزاء مختلفة داخل نفس الصفحة باستخدام خاصية <code>id</code>:</p>
+<pre><code>&lt;a href="#section1"&gt;اذهب إلى القسم 1&lt;/a&gt;</code></pre>
+<p>ثم تضع الوسم التالي في المكان الذي تريد الوصول إليه:</p>
+<pre><code>&lt;h2 id="section1"&gt;القسم 1&lt;/h2&gt;</code></pre>
+
+<h2>خاتمة</h2>
+<p>تعلم الصور والروابط أساسي لبناء صفحات ويب جذابة وتفاعلية. استخدم هذه العناصر لتزيين موقعك وتسهيل تنقل الزوار بين الصفحات.</p>
+
+<a href="https://youtu.be/vz0JYVg5GPE" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #a678b4; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
+  🎥 شاهد الفيديو على يوتيوب
+</a>
+
+    </div>
+  </main>
+
+  <footer>
+     <nav class="footer-nav" id="topNav">
+      <a href="index.html">الرئيسية</a>
+      <a href="learn.html">تعلم</a>
+      <a href="about.html">من أنا</a>
+      <a href="contact.html">تواصل</a>
+    </nav>
+    &copy; 2025 MisaDesigns. جميع الحقوق محفوظة.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

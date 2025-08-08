@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>تعلم - MisaDesigns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      background-color: #fdf9fc;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .main-content {
+      flex: 1;
+      padding: 40px;
+    }
+    .topic-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .card {
+      background-color: #fff;
+      border-right: 8px solid;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(110,75,126,0.15);
+      text-align: right;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card p {
+      margin-bottom: 10px;
+    }
+    .card a {
+      background-color: #6e4b7e;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+    .card a:hover {
+      background-color: #8f6cb5;
+    }
+  </style>
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="main-sidebar" id="sideBar">
+    <h2>MisaDesigns</h2>
+    <a href="learn.html">📘 تعلم</a>
+    <a href="projects.html">💻 مشاريعي</a>
+    <a href="https://github.com/Maysa-Tatour" target="_blank">🐙 GitHub</a>
+    <a href="https://youtube.com/@code2799?si=ypRCBooV5jBldT2A" target="_blank">📺 YouTube</a>
+    <a href="about.html">🙋‍♀️ من أنا</a>
+    <a href="contact.html">📩 تواصل</a>
+  </div>
+  <div class="main-content">
+    <h1>ابدئي التعلم خطوة بخطوة</h1>
+
+    <div class="topic-cards">
+      <div class="card" style="border-color:#6e4b7e">
+        <h3>HTML</h3>
+        <p>ابدئي مع أساسيات بناء الصفحات باستخدام HTML.</p>
+        <a href="html.html">ابدئي الآن</a>
+      </div>
+
+      <div class="card" style="border-color:#e57373">
+        <h3>CSS</h3>
+        <p>تعلمي تنسيق صفحاتك بالألوان والخطوط والتصميمات.</p>
+        <a href="css.html" style="pointer-events: none;opacity: 0.5;">ابدئي الآن</a><span style="display: inline-block;margin-right: 5px;">قريبا</span>
+      </div>
+
+      <div class="card" style="border-color:#64b5f6">
+        <h3>JavaScript</h3>
+        <p>اجعلي صفحاتك تفاعلية بإضافة برمجة بسيطة وممتعة.</p>
+        <a href="javascript.html" style="pointer-events: none;opacity: 0.5;">ابدئي الآن</a><span style="display: inline-block;margin-right: 5px;">قريبا</span>
+      </div>
+
+      <div class="card" style="border-color:#81c784">
+        <h3>مشاريع تطبيقية</h3>
+        <p>طبقي ما تعلمته عبر مشاريع حقيقية خطوة بخطوة.</p>
+        <a href="projects.html" style="pointer-events: none;opacity: 0.5;">ابدئي المشروع</a><span style="display: inline-block;margin-right: 5px;">قريبا</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
